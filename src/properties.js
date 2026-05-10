@@ -2,7 +2,8 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'Large Language Models as Natural Language Interfaces for Human-Machine Interaction in Manufacturing and Robotics - Coursework 3 literature collection: 10 papers on llm as natural language interfaces for human-machine interaction in manufacturing and robotics';
+var title = 'LLMs as Natural Language Interfaces in Manufacturing and Robotics';
+
 /**
  * Relative path to the data directory
  * @type {string}
@@ -49,16 +50,27 @@ var tagCloudOptions = [{
 var editable = true;
 
 /**
- * Subtitle describing the paper the data is referring to (set to null to deactivate)
+ * Subtitle describing the literature collection
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'Sample literature collection for <b><a href="http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/eurovis14-star.pdf" target="_blank">SurVis</a></b>',
+    html: `
+        <div style="text-align:center; margin-top:10px;">
+            <h2 style="margin:0; font-size:22px;">
+                Coursework 3 Literature Collection
+            </h2>
+            <p style="margin-top:8px; font-size:16px; line-height:1.5;">
+                10 Papers on Large Language Models as Natural Language Interfaces 
+                for Human-Machine Interaction in Manufacturing and Robotics
+            </p>
+        </div>
+    `,
     id: 'Beck2016Visual'
 };
 
 /**
- * Extra pages like an about page that will be listed in the footer an can be opened on demand (page name -> path)
+ * Extra pages like an about page that will be listed in the footer and can be opened on demand
+ * (page name -> path)
  */
 var extraPages = {
     'about': 'about.html'
@@ -69,15 +81,20 @@ var extraPages = {
  * @type {string}
  */
 var customStyle = '';
+
 /* Example for simplified entries */
-//var customStyle = 'styles/custom_entries_simplified.css';
+// var customStyle = 'styles/custom_entries_simplified.css';
 
 /**
- * Options for showing citation information (set to null to avoid showing any citation information)
- * minCitationCount: minimum number of citations of a paper to be displayed in the visualization
+ * Options for showing citation information
+ * (set to null to avoid showing any citation information)
+ * minCitationCount: minimum number of citations of a paper
+ * to be displayed in the visualization
  * @type {{minCitationCount: number}}
  */
+
 /* var citations = {
     minCitationCount: 5
 }; */
+
 var citations = null;
