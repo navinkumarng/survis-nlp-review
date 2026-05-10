@@ -1,17 +1,113 @@
 ﻿const generatedBibEntries = {
-    "Beck2016Visual": {
-        "abstract": "Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.",
-        "author": "Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel",
-        "doi": "10.1109/TVCG.2015.2467757",
-        "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "keywords": "type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser",
-        "number": "01",
-        "publisher": "IEEE",
-        "series": "TVCG",
-        "title": "Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}",
+    "Ahn2022Do": {
+        "abstract": "Ahn et al. propose SayCan, a framework that grounds large language model outputs in the physical capabilities of a robot. Rather than executing any language-suggested action, an affordance model scores each candidate action based on the robot's ability to carry it out in the current environment. Evaluated across 101 real-world manipulation tasks in a kitchen setting, SayCan achieves a 74% success rate on long-horizon tasks, demonstrating that combining LLMs with environmental feedback significantly improves task feasibility.",
+        "author": "Ahn, Michael and Brohan, Anthony and Brown, Noah and Chebotar, Yevgen and Cortes, Omar and David, Byron and Finn, Chelsea and Fu, Chuyuan and Gopalakrishnan, Keerthana and Hausman, Karol and Herzog, Alex and Ho, Daniel and Hsu, Jasmine and Ibarz, Julian and Ichter, Brian and Irpan, Alex and Jang, Eric and Joshi, Nikhil J. and Julian, Ryan and Zeng, Andy",
+        "booktitle": "Proceedings of the Conference on Robot Learning (CoRL)",
+        "doi": "10.48550/arXiv.2204.01691",
+        "keywords": "type:method, large_language_models, robotics, grounding, task_planning, embodied_ai, affordance",
+        "title": "Do As {I} Can, Not As {I} Say: Grounding Language in Robotic Affordances",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2204.01691",
+        "year": "2022"
+    },
+    "Brohan2023RT2": {
+        "abstract": "Brohan et al. present RT-2, a vision-language-action model that directly maps camera images and natural language instructions to robot actions. By fine-tuning a large vision-language model on both web-scale data and robot trajectory data, RT-2 transfers general semantic knowledge to physical control. Evaluation across over 6,000 real-world robot trials shows strong generalisation to novel objects and concepts not seen during robot training, demonstrating emergent reasoning capabilities in a physical manipulation context.",
+        "author": "Brohan, Anthony and Brown, Noah and Carbajal, Justice and Chebotar, Yevgen and Chen, Xi and Choromanski, Krzysztof and Ding, Tianli and Driess, Danny and Finn, Chelsea and Florence, Pete and Fu, Chuyuan and Hausman, Karol and Herzog, Alexander and Ichter, Brian and Irpan, Alex and Levine, Sergey and Vanhoucke, Vincent and Zeng, Andy",
+        "booktitle": "Proceedings of the Conference on Robot Learning (CoRL)",
+        "doi": "10.48550/arXiv.2307.15818",
+        "keywords": "type:method, vision_language_models, robotics, robot_control, multimodal, embodied_ai, generalisation",
+        "title": "{RT-2}: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2307.15818",
+        "year": "2023"
+    },
+    "Brown2020Language": {
+        "abstract": "Brown et al. introduce GPT-3, a 175-billion parameter autoregressive language model trained on a diverse corpus of internet text. The model demonstrates strong few-shot learning capabilities across a wide range of NLP tasks \u2014 including translation, question answering, and arithmetic \u2014 using only a small number of in-context examples without gradient updates. GPT-3 establishes that scaling model size produces qualitative improvements in task generalisation, forming a foundational basis for subsequent work on instruction-following and embodied AI systems.",
+        "author": "Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D. and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario",
+        "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)",
+        "doi": "10.48550/arXiv.2005.14165",
+        "keywords": "type:method, large_language_models, few_shot_learning, gpt, pretraining, scaling, natural_language_processing",
+        "title": "Language Models are Few-Shot Learners",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2005.14165",
+        "volume": "33",
+        "year": "2020"
+    },
+    "Driess2023PaLME": {
+        "abstract": "Driess et al. introduce PaLM-E, a multimodal language model that integrates continuous sensor data \u2014 including images, robot states, and 3D scene representations \u2014 directly into the token space of a large language model. This enables PaLM-E to reason about physical environments and generate robot control plans from natural language queries. Evaluated on robotic manipulation and navigation tasks, PaLM-E achieves state-of-the-art performance and demonstrates that embodied reasoning can emerge from training on web-scale multimodal data without task-specific architectures.",
+        "author": "Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Dafner, Daniel and Zeng, Andy and Finn, Chelsea",
+        "booktitle": "Proceedings of the International Conference on Machine Learning (ICML)",
+        "doi": "10.48550/arXiv.2303.03378",
+        "keywords": "type:method, multimodal, large_language_models, embodied_ai, robot_control, vision_language_models, natural_language_interfaces",
+        "title": "{PaLM-E}: An Embodied Multimodal Language Model",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2303.03378",
+        "year": "2023"
+    },
+    "Huang2022Language": {
+        "abstract": "Huang et al. explore whether large language models can extract actionable knowledge for embodied agents in a zero-shot setting \u2014 without task-specific training. The method queries an LLM to decompose high-level goals into sequences of feasible sub-steps, which are then executed by an agent. Evaluated on household task benchmarks, the approach demonstrates that LLMs encode sufficient common-sense knowledge to serve as zero-shot planners, though performance degrades when plans require precise physical execution.",
+        "author": "Huang, Wenlong and Abbeel, Pieter and Pathak, Deepak and Mordatch, Igor",
+        "booktitle": "Proceedings of the International Conference on Machine Learning (ICML)",
+        "doi": "10.48550/arXiv.2201.07207",
+        "keywords": "type:method, large_language_models, task_planning, zero_shot, embodied_ai, natural_language_interfaces",
+        "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2201.07207",
+        "year": "2022"
+    },
+    "Liang2023Code": {
+        "abstract": "Liang et al. propose Code as Policies, a framework in which an LLM generates executable robot control code directly from natural language instructions. Rather than producing action sequences in natural language, the model writes Python programs that call robot APIs, enabling precise, composable, and reusable control. Evaluated on a tabletop manipulation robot, the approach outperforms prior instruction-following methods and generalises to novel task descriptions without retraining.",
+        "author": "Liang, Jacky and Huang, Wenlong and Xia, Fei and Xu, Peng and Hausman, Karol and Ichter, Brian and Florence, Pete and Zeng, Andy",
+        "booktitle": "Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)",
+        "doi": "10.48550/arXiv.2209.07753",
+        "keywords": "type:method, large_language_models, robot_control, code_generation, natural_language_interfaces, embodied_ai",
+        "title": "Code as Policies: Language Model Programs for Embodied Control",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2209.07753",
+        "year": "2023"
+    },
+    "Makatura2023How": {
+        "abstract": "Makatura et al. examine the potential of large language models to assist in engineering design and manufacturing workflows. The paper evaluates LLMs on tasks including design specification interpretation, parametric modelling, fabrication constraint reasoning, and code generation for manufacturing processes. A structured benchmark is proposed to assess LLM performance across these domains. Findings indicate that LLMs can meaningfully support early-stage design but require domain-specific grounding for precise manufacturing tasks, such as generating machine control code from natural language.",
+        "author": "Makatura, Liane and Foshey, Michael and Wang, Bohan and H\\\"{a}hnlein, Felix and Ma, Pingchuan and Thomaszewski, Bernhard and Mutny, Mojmir and Krause, Andreas and Shamir, Ariel and Wang, Sheng and Wu, Longhua and Tomlinson, Bill and Matusik, Wojciech",
+        "doi": "10.48550/arXiv.2307.14377",
+        "journal": "arXiv preprint",
+        "keywords": "type:method, large_language_models, manufacturing, design, natural_language_interfaces, code_generation, human_machine_interaction",
+        "title": "How Can Large Language Models Help Humans in Design and Manufacturing?",
         "type": "article",
-        "url": "http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf",
-        "volume": "22",
-        "year": "2016"
+        "url": "https://arxiv.org/abs/2307.14377",
+        "year": "2023"
+    },
+    "Vemprala2023ChatGPT": {
+        "abstract": "Vemprala et al. investigate how ChatGPT can be used to control robots through natural language, proposing a set of design principles including defining a robot API in the prompt, using code as the output format, and iteratively refining instructions. The system is evaluated on aerial drones, robotic arms, and robot swarms across tasks such as path planning, manipulation, and multi-agent coordination. Results demonstrate that ChatGPT can generate functional robot control code from plain English descriptions with minimal engineering overhead.",
+        "author": "Vemprala, Sai and Bonatti, Rogerio and Bucker, Arthur and Kapoor, Ashish",
+        "doi": "10.48550/arXiv.2306.17582",
+        "journal": "Microsoft Research Technical Report",
+        "keywords": "type:system, large_language_models, robotics, natural_language_interfaces, code_generation, robot_control, chatgpt",
+        "title": "{ChatGPT} for Robotics: Design Principles and Model Abilities",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2306.17582",
+        "year": "2023"
+    },
+    "Wei2022Chain": {
+        "abstract": "Wei et al. demonstrate that prompting large language models with chains of intermediate reasoning steps \u2014 rather than direct input-output pairs \u2014 significantly improves performance on complex reasoning tasks. Chain-of-thought prompting is evaluated across arithmetic, commonsense, and symbolic reasoning benchmarks using models including GPT-3 and PaLM. The approach achieves state-of-the-art results on several benchmarks and reveals that reasoning ability emerges at sufficient model scale, with important implications for how LLMs can be applied to structured, multi-step problems such as manufacturing task decomposition.",
+        "author": "Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc V. and Zhou, Denny",
+        "booktitle": "Advances in Neural Information Processing Systems (NeurIPS)",
+        "doi": "10.48550/arXiv.2201.11903",
+        "keywords": "type:method, large_language_models, chain_of_thought, reasoning, prompting, few_shot_learning, natural_language_processing",
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "type": "inproceedings",
+        "url": "https://arxiv.org/abs/2201.11903",
+        "year": "2022"
+    },
+    "Zeng2023Large": {
+        "abstract": "This survey provides a comprehensive overview of how large language models are being applied in robotics, covering task planning, manipulation, navigation, and human-robot interaction. The authors categorise LLM-based robotic systems by application domain and methodology, reviewing over 150 papers and identifying key open challenges including language grounding, safety, and real-time execution constraints in physical environments.",
+        "author": "Zeng, Yao and others",
+        "doi": "10.48550/arXiv.2311.07226",
+        "journal": "arXiv preprint",
+        "keywords": "type:survey, large_language_models, robotics, natural_language_interfaces, task_planning, literature_review",
+        "title": "Large Language Models for Robotics: {A} Survey",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2311.07226",
+        "year": "2023"
     }
 };
