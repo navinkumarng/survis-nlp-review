@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'SurVis Literature Collection';
+var title = 'Large Language Models as Natural Language Interfaces for Human-Machine Interaction in Manufacturing and Robotics';
 
 /**
  * Relative path to the data directory
