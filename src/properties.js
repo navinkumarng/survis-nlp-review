@@ -3,7 +3,7 @@
  * @type {string}
  */
 var title = 'Large Language Models as Natural Language Interfaces for Human-Machine Interaction in Manufacturing and Robotics';
-
+var subtitle = 'Coursework 3 literature collection: 10 papers on llm as natural language interfaces for human-machine interaction in manufacturing and robotics'
 /**
  * Relative path to the data directory
  * @type {string}
