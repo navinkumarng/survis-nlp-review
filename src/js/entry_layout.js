@@ -120,7 +120,7 @@ const entryLayout = (function () {
                 class: 'entry type_' + entry['type'],
                 id: id
             });
-            var pdfFile = dataDir + 'papers_pdf/' + id + '.pd<f';
+            var pdfFile = dataDir + 'papers_pdf/' + id + '.pdf';
             if (typeof bib.availableImg != 'undefined' && bib.availableImg.indexOf(id) >= 0) {
                 createImgDiv(id, pdfFile).appendTo(entryDiv);
             }
